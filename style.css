@@ -1,27 +1,31 @@
+* {
+  margin: 0%;
+}
+
 body {
-  background-color: #dcffe4;
+  background-color: #dcffe469;
 }
 
 header {
   text-align: center;
+  padding: 5%;
+  margin-bottom: 25px;
 }
 
 #cardCollection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .card {
-  height: 300px;
+  height: 350px;
   width: 250px;
   margin: 10px;
   padding: 20px;
   border-radius: 10%;
   border: solid black 2px;
   box-shadow: none;
-  
 }
 
 .card:hover {
@@ -29,37 +33,66 @@ header {
   transition: box-shadow 0.5s ease-in-out;
 }
 
-.cardHeader {
-  text-align: cleft;
-  text-decoration: underline;
+.card-header-container {
+  height: 27%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  border: black solid 1px;
+  background-color: rgba(252, 230, 203, 0.671);
+  border-radius: 5%;
+  font-size: 22px;
+  margin-bottom: 7%;
 }
 
-.topic-links {
-  list-style: none;
-  font-size: 20px;
-  text-align: left;
+.quiz-button {
+  box-shadow: -3px 3px 2px grey;
+  height: 40px;
+  width: 30%;
+}
 
+.quiz-button:hover {
+  box-shadow: -3px 3px 2px grey;
+}
+
+.quiz-button:active {
+  box-shadow: none;
 }
 
 .topic-link:hover {
-  font-size: 22px;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
-  color: rgb(255, 255, 255, 100%);
 }
-
-
 
 /*CARD COLORS SECTION*/
 
+/*CARD FONT COLORS FOR CONTRAST*/
 
+.card-body-white {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+.card-body-white:hover {
+  color: rgb(255, 255, 255, 100%);
+}
+
+.card-body-black {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 22px;
+}
+
+.card-body-black:hover {
+  color: rgba(0, 0, 0, 100%);
+}
 
 /*HTML CARD*/
 
 #htmlCard {
   background-color: #e34c26f2;
-  color: black;
 }
 
 #htmlCard:hover {
@@ -80,6 +113,7 @@ header {
 
 #jsCard {
   background-color: #f1e05af2;
+  color: black;
 }
 
 #jsCard:hover {
@@ -110,6 +144,7 @@ header {
 
 #sqlCard {
   background-color: #dad8d8f2;
+  color: black;
 }
 
 #sqlCard:hover {
@@ -117,22 +152,6 @@ header {
 }
 
 @media screen and (max-width: 550px) {
-  #cardCollection {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 10%;
-  }
-
-  .card {
-    height: auto;
-    width: 80%;
-    
-    margin: 1%;
-    padding: 0%;
-    border-radius: 10%;
-    border: solid black 2px;
-  }
 }
 
 /* To add more language cards start here...
