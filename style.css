@@ -1,0 +1,140 @@
+body {
+  background-color: #dcffe4;
+}
+
+header {
+  text-align: center;
+}
+
+#cardCollection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.card {
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10%;
+  border: solid black 2px;
+  box-shadow: none;
+  
+}
+
+.card:hover {
+  box-shadow: -10px 10px 10px grey;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.cardHeader {
+  text-align: cleft;
+  text-decoration: underline;
+}
+
+.topic-links {
+  list-style: none;
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.topic-link:hover {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(255, 255, 255, 100%);
+}
+
+
+
+/*CARD COLORS SECTION*/
+
+
+
+/*HTML CARD*/
+
+#htmlCard {
+  background-color: #e34c26f2;
+  color: black;
+}
+
+#htmlCard:hover {
+  background-color: #e34c26;
+}
+
+/*CSS CARD*/
+
+#cssCard {
+  background-color: #563d7cf2;
+}
+
+#cssCard:hover {
+  background-color: #563d7c;
+}
+
+/*JavaScript Card*/
+
+#jsCard {
+  background-color: #f1e05af2;
+}
+
+#jsCard:hover {
+  background-color: #f1e05a;
+}
+
+/*Java Card*/
+
+#javaCard {
+  background-color: #b07219f2;
+}
+
+#javaCard:hover {
+  background-color: #b07219;
+}
+
+/*Python Card*/
+
+#pythonCard {
+  background-color: #3572a5f2;
+}
+
+#pythonCard:hover {
+  background-color: #3572a5;
+}
+
+/*SQL Card*/
+
+#sqlCard {
+  background-color: #dad8d8f2;
+}
+
+#sqlCard:hover {
+  background-color: #dad8d8;
+}
+
+@media screen and (max-width: 550px) {
+  #cardCollection {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 10%;
+  }
+
+  .card {
+    height: auto;
+    width: 80%;
+    
+    margin: 1%;
+    padding: 0%;
+    border-radius: 10%;
+    border: solid black 2px;
+  }
+}
+
+/* To add more language cards start here...
+Find coordinating GitHub colors 
+@ https://github.com/ozh/github-colors/blob/master/colors.json*/
